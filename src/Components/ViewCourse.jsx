@@ -5,7 +5,7 @@ const ViewCourse = () => {
     const [data, changeData] = useState([]);
 
     const fetchData = () => {
-        axios.get(" http://192.168.33.245:5001/api/courses").then(
+        axios.get("  https://host-demo-app.onrender.com/api/courses").then(
             (response) => {
                 changeData(response.data);
 
