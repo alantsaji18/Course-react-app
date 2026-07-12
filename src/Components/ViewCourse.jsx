@@ -1,12 +1,12 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import NavBar from './NavBar';
 
 const ViewCourse = () => {
     const [data, changeData] = useState([]);
 
     const fetchData = () => {
-        axios.get("  https://host-demo-app.onrender.com/api/courses").then(
+        axios.get("https://host-demo-app.onrender.com/api/courses").then(
             (response) => {
                 changeData(response.data);
 
